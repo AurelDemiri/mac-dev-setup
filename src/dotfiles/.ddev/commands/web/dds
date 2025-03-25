@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Run migrate:fresh with default seeding and run dummy data seeder afterwards
+## Usage: dds
+## Example: "ddev dds"
+## ProjectTypes: laravel
+## ExecRaw: true
+
+php ./artisan migrate:fresh --seed && php ./artisan db:seed --class=DummyDataSeeder

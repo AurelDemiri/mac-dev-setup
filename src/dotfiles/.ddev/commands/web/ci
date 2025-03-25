@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Description: Run composer install inside the web container
+## Usage: ci
+## Example: "ddev ci"
+## ProjectTypes: laravel
+## ExecRaw: true
+
+composer install
+
